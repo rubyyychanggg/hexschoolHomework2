@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    margin: 0 auto;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    background-size: 60vw 100%,361px 361px;
+    background-position: right 0,-50% 50px;
+}
+.header{
+    width: 100vw;
+    background-color: #F7F9FD;
+    border-radius: 0px 0px 0px 300px;
+}
+.navbar{
+    margin: 0 auto;
+	width: 80%;
+	padding-top: 24px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo img{
+    width: 218px;
+	height: 40px;
+	margin-left: 139px;
+}
+.btnRed{
+    background: #FF5D50;
+	border-radius: 22px 22px;
+	color: #FFFFFF;
+	font-family: 'Noto Sans TC', 'Regular';
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+    align-self: center;
+	padding: 12px 32px;
+	margin-right: 139px;
+}
+.header h1{
+    padding-top: 180px;
+    padding-left: 139px;
+	color: #221E1F;
+	font-family: 'Noto Sans TC', 'Bold';
+	font-size: 48px;
+	text-align: left;
+}
+.header p{
+    padding-top: 16px;
+    padding-left: 139px;
+    padding-bottom: 180px;
+	color: #221E1F;
+	font-family: 'Noto Sans TC', 'Regular';
+	font-size: 16px;
+	text-align: left;
+}
+.menu{
+    
+}
