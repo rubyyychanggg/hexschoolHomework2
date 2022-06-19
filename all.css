@@ -735,8 +735,13 @@ table {
 		background-position: 50% 440px, 50% 500px,-165px 1100px, 0 0, 88% 540vh, 18% 295vh, 0 390vh;
 	}
 	.navbar{
+		width: 100%;
+		padding-left: 21px;
 		padding-bottom: 16px;
 		border-bottom: 3px solid #FFD153;
+	}
+	.btn{
+		margin-right: 9%;
 	}
 	.connect{
 		width: 80%;
