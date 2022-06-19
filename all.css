@@ -736,12 +736,15 @@ table {
 	}
 	.navbar{
 		width: 100%;
-		padding-left: 21px;
+		/* padding-left: 21px; */
 		padding-bottom: 16px;
 		border-bottom: 3px solid #FFD153;
 	}
+	.logo{
+		margin-left: 7%;
+	}
 	.btn{
-		margin-right: 9%;
+		margin-right: 7%;
 	}
 	.connect{
 		width: 80%;
