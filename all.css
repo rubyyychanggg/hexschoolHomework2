@@ -135,10 +135,14 @@ table {
 }
 
 /* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); */
+/* *,*::before,*::after{
+	box-sizing: border-box;
+} */
 .wrap {
-	/* max-width: 1366px; */
-	margin: 0 auto;
-	/* height: 100vh; */
+	max-width: 100%;
+	/* margin: 0 auto; */
+	/* padding-left: 10px;
+	padding-right: 10px; */
 	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
 	background-repeat: no-repeat;
 	background-size: 650px, 360px 360px, 851px 768px, 310px 310px, 150px 150px, 100% 100%;
@@ -157,7 +161,6 @@ table {
 .logo img {
 	width: 218px;
 	height: 40px;
-	margin-left: 139px;
 }
 
 .btn {
@@ -256,7 +259,7 @@ table {
 }
 
 .situation {
-	width: 1088px;
+	max-width: 70%;
 	margin: auto;
 	margin-bottom: 100px;
 }
@@ -279,19 +282,19 @@ table {
 
 .list {
 	margin: auto;
+	width: 100%;
 	/* background-color: pink; */
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: center;
-	max-width: 1088px;
 	gap: 16px;
 	/* justify-content: space-between; */
 }
 
 .card {
 	border-radius: 12px 12px 12px 12px;
-	height: fit-content;
-	width: 260px;
+	width: 25%;
+	/* height: fit-content; */
 	background-color: #fff;
 	box-shadow: 0 2px 10px 0 #00000014;
 }
@@ -326,14 +329,16 @@ table {
 .function {
 	display: flex;
 	margin: auto;
-	width: 1088px;
+	width: 70%;
+	/* flex-direction: row;
+	justify-content: space-between; */
 	margin-bottom: 100px;
 }
 
 .side {
 	display: flex;
 	flex-wrap: wrap;
-	/* width: 507px; */
+	width: 60%;
 	/* background-color: plum; */
 
 }
@@ -388,7 +393,7 @@ table {
 }
 
 .introduction p {
-	width: 396px;
+	/* width: 396px; */
 	color: #221E1F;
 	font-family: 'Noto Sans TC', 'Regular';
 	font-size: 18px;
@@ -409,7 +414,7 @@ table {
 
 .feedback {
 	margin: auto;
-	width: 1088px;
+	max-width: 1088px;
 	/* background-color: lightcoral; */
 }
 
@@ -426,7 +431,7 @@ table {
 	/* height: 80vh; */
 	display: flex;
 	justify-content: space-between;
-	background-color: palegreen;
+	/* background-color: palegreen; */
 }
 
 .user {
@@ -584,31 +589,48 @@ table {
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
-@media (max-width:1089px){
+@media (max-width:1560px){
 	.wrap {
 		width: 100%;
+		background-size: 450px, 360px 360px, 851px 768px, 310px 310px, 150px 150px, 100% 100%;
+		background-position: 80% 118px, -222px 589px, right 0, 90% 230vh, 18% 295vh, 0 160vh;
+	}
+	.header{
+		padding-left: 10%;
 	}
 	.content{
 		width: 100%;
 	}
-	.situation{
-		width: 100%;
-	}
+	/* .situation{
+		width: 70%;
+	} */
 	.connect{
-		width: 100%;
+		width: 80%;
 	}
+	.situation{
+		width: 80%;
+	}
+	/* .list{
+		max-width: fit-content;
+	} */
+	/* .card{
+		width: 40%;
+		height: fit-content;
+	} */
 	.function{
-		width: 100%;
+		width: 80%;
 	}
 	.side{
 		justify-content: center;
 	}
 	.feedback{
-		width: 100%;
+		width: 80%;
 	}
 	.users{
-		width: 80%;
+		width: 100%;
 		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	/* .user{
 		width: 220px;
@@ -631,9 +653,101 @@ table {
 		width: 100%;
 	}
 }
+@media (max-width:1280px){
+	.situation{
+		margin-bottom: 0;
+		/* width: 80%; */
+	}
+	.function{
+		flex-direction: column-reverse;
+		width: 100%;
+		/* background-color: palegreen; */
+	}
+	.side{
+		width: 80%;
+		align-self: center;
+		/* flex-wrap: nowrap; */
+		gap: 20px;
+	}
+	.side li{
+		margin-right: 0;
+		width: 35%;
+	}
+	.introduction{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width:1023px) {
+	.wrap {
+		width: 100%;
+		background-size: 575px, 360px 360px, 851px 768px, 310px 310px, 150px 150px, 100% 100%;
+		background-position: 80% 345px, -222px 589px, right 0, 90% 230vh, 18% 295vh, 0 160vh;
+	}
+	.header{
+		padding-top: 70px;
+	}
+	.content{
+		margin-top: 90vh;
+	}
+	.ad{
+		width: 33%;
+	}
+	.situation{
+		width: 90%;
+	}
+	.list{
+		flex-wrap: wrap;
+	}
+	.card{
+		width: 45%;
+	}
+	.users{
+		display: unset;
+		}
+	.user{
+		align-items: center;
+		width: 100%;
+		margin: auto;
+		position: unset;
+		margin: auto;
+	}
+	.box{
+		align-items: center;
+		width: 80%;
+		height: 285px;
+		margin: auto;
+	}
+	.bottom{
+		padding-top: 0;
+		padding-bottom: 24px;
+	}
+	.pagination{
+		margin-top: 345px;
+	}
+}
 @media (max-width:767px) {
 	.wrap {
 		width: 100%;
+		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home.svg) ,url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg) ,url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+		background-size: 65%, 90%, 260px 260px, 0 0, 135px 135px, 150px 150px, 100% 100%;
+		background-position: 50% 440px, 50% 500px,-165px 1100px, 0 0, 88% 540vh, 18% 295vh, 0 390vh;
+	}
+	.navbar{
+		padding-bottom: 16px;
+		border-bottom: 3px solid #FFD153;
+	}
+	.connect{
+		width: 80%;
+		flex-direction: column;
+		margin: auto;
+		margin-bottom: 60px;
+	}
+	.ad{
+		width: 100%;
+		align-self: center;
+		margin-bottom: 24px;
 	}
 	.content{
 		width: 100%;
@@ -641,8 +755,9 @@ table {
 	.situation{
 		width: 100%;
 	}
-	.connect{
-		width: 100%;
+	.card{
+		width: 90%;
+		margin-bottom: 24px;
 	}
 	.function{
 		width: 100%;
@@ -650,8 +765,25 @@ table {
 	.side{
 		justify-content: center;
 	}
+	.side li{
+		width: 80%;
+	}
 	.feedback{
 		width: 100%;
+	}
+	.user{
+		left: 0;
+		right: 0;
+	}
+	.face{
+		left: 10%;
+	}
+	.box{
+		left: 0;
+		right: 0;
+	}
+	.impression{
+		margin-bottom: 24px;
 	}
 	.footer{
 		width: 100%;
